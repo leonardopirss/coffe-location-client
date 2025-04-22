@@ -1,0 +1,41 @@
+.card {
+    background-color: #fff;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 764px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 16px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 43%;
+    height: 277px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin: 16px;
+    color: #5c6709;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #050505;
+    margin: 8px 16px;
+    line-height: 1.4;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 4px;
+}
+
+.card p:last-child {
+    border-bottom: none;
+}
