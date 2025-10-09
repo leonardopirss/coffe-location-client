@@ -2,7 +2,6 @@
 
 ## 💻 **Frontend — Café Office Web (`README.md`)**
 
-```markdown
 # ☕ Café Office Web
 
 ## Sobre o projeto
@@ -17,6 +16,5 @@ A aplicação consome a API do backend e exibe uma lista de locais com base na l
 
 ## Tecnologias
 - React 18
-- Vite (ou Create React App)
 - Axios
 - React Router DOM
