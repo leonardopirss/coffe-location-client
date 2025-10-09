@@ -18,7 +18,3 @@ A aplicação consome a API do backend e exibe uma lista de locais com base na l
 - React 18
 - Axios
 - React Router DOM
-
-
-## Trello 
-https://trello.com/invite/b/68e725c0cb7f42bc0126acd8/ATTIa84c8236890db74044bbbca0e5bffb914D9628C2/api-coffe
