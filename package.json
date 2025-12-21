@@ -13,6 +13,7 @@
     "@types/react-dom": "^19.1.2",
     "axios": "^1.8.4",
     "bootstrap": "^5.3.5",
+    "jest": "^27.5.1",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.1.0",
@@ -24,7 +25,21 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --coverage --watchAll=false"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "lines": 3.12
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.test.{js,jsx,ts,tsx}",
+      "!src/**/index.{js,jsx,ts,tsx}",
+      "!src/reportWebVitals.{js,ts}"
+    ]
   },
   "eslintConfig": {
     "extends": [
