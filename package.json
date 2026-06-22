@@ -23,14 +23,20 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false --coverage --coverageReporters=cobertura",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings=0",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix --max-warnings=0",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "root": true,
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/no-explicit-any": "error"
+    }
   },
   "browserslist": {
     "production": [

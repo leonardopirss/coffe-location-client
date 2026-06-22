@@ -5,7 +5,7 @@ export interface CardI {
     municipality: string
     assessment: number
     description: string
-    image: any
+    image: string
 }
 
 export interface DropDownI {
