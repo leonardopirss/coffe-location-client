@@ -12,8 +12,8 @@ export function Home() {
 
     useEffect(() => {
         api
-            .get("/list")
-            .then((response: any) => {
+            .get<CardI[]>("/list")
+            .then((response) => {
                 setCoffe(response.data)
             })
             .catch((err) => {
@@ -23,8 +23,8 @@ export function Home() {
 
     const listBestCoffe = () => {
         api
-            .get("/list/best-coffe")
-            .then((response: any) => {
+            .get<CardI[]>("/list/best-coffe")
+            .then((response) => {
                 setCoffe(response.data)
             })
             .catch((err) => {
@@ -34,8 +34,8 @@ export function Home() {
 
     const list = () => {
         api
-            .get("/list")
-            .then((response: any) => {
+            .get<CardI[]>("/list")
+            .then((response) => {
                 setCoffe(response.data)
             })
             .catch((err) => {
@@ -44,11 +44,11 @@ export function Home() {
     }
 
     const closest = () => {
-        api.get("/closest/coffe", {
+        api.get<CardI[]>("/closest/coffe", {
             params: {
                 latitude, longitude
             }
-        }).then((response: any) => {
+        }).then((response) => {
             setCoffe(response.data)
         }).catch((err) => {
             console.error("erro ao carregar lista de melhores cafés" + err);
