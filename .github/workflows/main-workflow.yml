@@ -12,7 +12,7 @@ on:
 
 jobs:
   call-node-workflow:
-    uses: leonardopirss/workflow/.github/workflows/node.yml@main
+    uses: leonardopirss/workflow/.github/workflows/node.yml@develop
     with:
       node-version: '18'
     secrets: inherit
