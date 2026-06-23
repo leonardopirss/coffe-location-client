@@ -8,8 +8,7 @@ on:
 
 jobs:
   call-node-workflow:
-    uses: leonardopirss/workflow/.github/workflows/node.yml@develop
+    uses: leonardopirss/workflow/.github/workflows/node.yml@main
     with:
       node-version: '18'
-      SVC_TOKEN: ${{ secrets.SVC_TOKEN }}
     secrets: inherit
