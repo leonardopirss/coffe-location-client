@@ -5,10 +5,6 @@ on:
     branches:
       - develop
       - main
-  pull_request:
-    branches:
-      - develop
-      - main
 
 jobs:
   call-node-workflow:
@@ -16,3 +12,4 @@ jobs:
     with:
       node-version: '18'
     secrets: inherit
+    SVC_TOKEN: ${{ secrets.SVC_TOKEN }}
